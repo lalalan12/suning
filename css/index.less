@@ -1,0 +1,447 @@
+//less导入
+@import "common.less";
+
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+
+}
+
+//html字体大小
+@baseFont: 50;
+
+// 搜索栏
+.search-content {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: (750rem / @baseFont);
+    height: (88rem / @baseFont);
+    background-color: red;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+
+    .classify {
+        float: left;
+        display: block;
+        width: (36rem / @baseFont);
+        height: (60rem / @baseFont);
+        margin: auto (30rem / @baseFont);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .search {
+        flex: 1;
+        position: relative;
+        height: (66rem / @baseFont);
+        background-color: #fff;
+        border-radius: (33rem / @baseFont);
+        padding-left: (60rem / @baseFont);
+
+        span {
+            font-size: (25rem / @baseFont);
+            color: rgb(143, 142, 142);
+            text-decoration: none;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: (15rem / @baseFont);
+            left: (15rem /@baseFont);
+            width: (36rem / @baseFont);
+            height: (36rem / @baseFont);
+            background: url(../images/search.png) no-repeat;
+            background-size: (36rem / @baseFont) auto;
+        }
+    }
+
+    .login {
+        float: right;
+        display: block;
+        width: (36rem / @baseFont);
+        height: (60rem / @baseFont);
+        margin: auto (30rem / @baseFont);
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// 焦点图
+.focus {
+    display: block;
+    width: (750rem / @baseFont);
+    height: (368rem / @baseFont);
+
+    img {
+        width: 100%;
+    }
+}
+
+// 广告栏
+.ad {
+    display: flex;
+    width: (750rem / @baseFont);
+
+    a {
+        flex: 1;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// 导航栏
+nav {
+    width: (750rem / @baseFont);
+    height: (310rem / @baseFont);
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            float: left;
+
+            a {
+                display: block;
+                width: (150rem / @baseFont);
+                height: (142rem / @baseFont);
+                text-align: center;
+
+                img {
+                    width: (84rem / @baseFont);
+                }
+
+                span {
+                    font-size: (20rem / @baseFont);
+                    color: rgb(105, 104, 104);
+                }
+            }
+        }
+    }
+}
+
+// newimg
+.newimg {
+    display: flex;
+    width: (750rem / @baseFont);
+    height: (234rem / @baseFont);
+
+    a {
+        border-left: (1rem / @baseFont) solid #fff;
+
+        img {
+            height: (234rem / @baseFont);
+        }
+
+        &:nth-child(1) {
+            border: 0;
+        }
+    }
+
+
+}
+
+// yh优惠
+.yh {
+    width: (702rem / @baseFont);
+    height: (680rem / @baseFont);
+    background-color: #fff;
+    margin: (40rem / @baseFont) auto;
+    border-radius: (10rem / @baseFont);
+
+    ul {
+        height: (520rem / @baseFont);
+
+        li {
+            float: left;
+
+            a {
+                display: block;
+                width: (350rem / @baseFont);
+                height: (258rem / @baseFont);
+
+                span {
+                    font-size: (25rem / @baseFont);
+                    font-weight: 700;
+                    color: #000;
+                    padding-left: (20rem / @baseFont);
+                }
+
+                >p {
+                    font-size: (20rem / @baseFont);
+                    color: rgb(150, 147, 147);
+                    margin-top: (5rem / @baseFont);
+                    padding-left: (20rem / @baseFont);
+                }
+
+                .goods {
+                    width: (350rem / @baseFont);
+                    height: (149rem / @baseFont);
+                    margin-top: (10rem / @baseFont);
+
+                    .left,
+                    .right {
+                        float: left;
+                        width: (120rem / @baseFont);
+                        height: (149rem / @baseFont);
+
+                        img {
+                            width: (120rem / @baseFont);
+                        }
+
+                        p {
+                            font-size: (18rem / @baseFont);
+                            text-align: center;
+                            color: red;
+                        }
+                    }
+
+                    .left {
+                        margin: 0 (30rem / @baseFont);
+                    }
+                }
+
+            }
+
+            .juhui,
+            .pingou {
+                .goods {
+
+                    .left,
+                    .right {
+                        position: relative;
+
+                        p {
+                            position: absolute;
+                            top: (99rem / @baseFont);
+                            left: (-13rem / @baseFont);
+                            color: #000;
+                            width: (150rem / @baseFont);
+                            height: (54rem / @baseFont);
+                            padding-top: (30rem / @baseFont);
+                            background: url(../upload/juhui-p.png) no-repeat;
+                            background-size: (150rem / @baseFont);
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(2n) {
+                border-left: (2rem / @baseFont) solid #f2f2f2;
+            }
+        }
+    }
+
+    .recommend {
+        width: (702rem / @baseFont);
+        height: (172rem / @baseFont);
+        border-top: (2rem / @baseFont) solid #f2f2f2;
+
+        .title {
+            float: left;
+            width: (173rem / @baseFont);
+            height: (172rem / @baseFont);
+
+            a {
+                display: block;
+
+                margin: (15rem / @baseFont) 0 0 (20rem / @baseFont);
+
+                span {
+                    font-size: (25rem / @baseFont);
+                    font-weight: 700;
+                    color: #000;
+                    padding: (1rem / @baseFont) 0 0 (1rem / @baseFont);
+                }
+
+                p {
+                    font-size: (20rem / @baseFont);
+                    color: rgb(150, 147, 147);
+                    margin-top: (3rem / @baseFont);
+                }
+            }
+        }
+
+        .things {
+            float: left;
+            width: (120rem /@baseFont);
+            height: (172rem / @baseFont);
+            margin-right: (10rem / @baseFont);
+
+            a {
+                img {
+                    width: (100rem / @baseFont);
+                    margin: (15rem / @baseFont) 0 0 (10rem / @baseFont);
+                }
+
+                p {
+                    color: #000;
+                    font-size: (18rem / @baseFont);
+                    text-align: center;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}
+
+//like猜你喜欢
+.like {
+    width: (702rem / @baseFont);
+    height: (800rem / @baseFont);
+
+    .title {
+        width: (702rem / @baseFont);
+        height: (60rem / @baseFont);
+
+        img {
+            width: (702rem / @baseFont);
+        }
+    }
+
+    .things {
+
+        li {
+            float: left;
+
+            a {
+                display: block;
+                width: (342rem / @baseFont);
+                height: (542rem / @baseFont);
+                background-color: #fff;
+                overflow: hidden;
+                border-radius: (10rem / @baseFont);
+
+                img {
+                    width: (342rem / @baseFont);
+                }
+            }
+
+            .description {
+                position: relative;
+                width: (318rem / @baseFont);
+                margin: 0 auto;
+
+                p {
+                    width: (318rem / @baseFont);
+                    font-size: (23rem / @baseFont);
+                    font-weight: 700;
+                    color: #000;
+                    //超出文字显示省略号
+                    overflow: hidden;
+                    line-height: (28rem / @baseFont);
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+
+                img {
+                    width: (48rem / @baseFont);
+                    height: (24rem / @baseFont);
+                }
+
+                >span {
+                    display: block;
+                    position: absolute;
+                    top: (75rem / @baseFont);
+                    left: (69rem / @baseFont);
+                    height: (24rem / @baseFont);
+                    line-height: (24rem / @baseFont);
+                    text-align: center;
+                    border: (1rem / @baseFont) solid rgb(194, 158, 111);
+                    border-radius: (5rem / @baseFont);
+                    font-size: (14rem / @baseFont);
+                    background-color: rgb(248, 234, 226);
+                    color: #000;
+                }
+
+                .span2 {
+                    left: (160rem / @baseFont);
+                }
+
+                .price {
+                    .span3 {
+                        font-size: (25rem / @baseFont);
+                        font-weight: 700;
+                        color: red;
+                    }
+
+                    .span4 {
+                        font-size: (16rem / @baseFont);
+                        color: rgb(150, 147, 147);
+                    }
+                }
+            }
+
+            &:nth-child(2n) {
+                float: right;
+            }
+        }
+    }
+
+}
+
+
+
+
+// footer
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: (750rem / @baseFont);
+    height: (101rem / @baseFont);
+    background-color: #fff;
+    z-index: 5;
+
+    ul {
+        li {
+            float: left;
+
+            a {
+                display: block;
+                width: (150rem / @baseFont);
+                height: (100rem / @baseFont);
+                text-align: center;
+                padding-top: (15rem / @baseFont);
+
+                img {
+                    width: (48rem / @baseFont);
+                }
+
+                span {
+                    display: block;
+                    font-size: (20rem / @baseFont);
+                    color: rgb(77, 75, 75);
+                }
+            }
+
+            &:nth-child(1) {
+                a {
+                    span {
+                        font-weight: 700;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

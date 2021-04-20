@@ -1,0 +1,415 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+html {
+  font-size: 50px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+}
+.search-content {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15rem;
+  height: 1.76rem;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+.search-content .classify {
+  float: left;
+  display: block;
+  width: 0.72rem;
+  height: 1.2rem;
+  margin: auto 0.6rem;
+}
+.search-content .classify img {
+  width: 100%;
+}
+.search-content .search {
+  flex: 1;
+  position: relative;
+  height: 1.32rem;
+  background-color: #fff;
+  border-radius: 0.66rem;
+  padding-left: 1.2rem;
+}
+.search-content .search span {
+  font-size: 0.5rem;
+  color: #8f8e8e;
+  text-decoration: none;
+}
+.search-content .search::before {
+  content: "";
+  position: absolute;
+  top: 0.3rem;
+  left: 0.3rem;
+  width: 0.72rem;
+  height: 0.72rem;
+  background: url(../images/search.png) no-repeat;
+  background-size: 0.72rem auto;
+}
+.search-content .login {
+  float: right;
+  display: block;
+  width: 0.72rem;
+  height: 1.2rem;
+  margin: auto 0.6rem;
+}
+.search-content .login img {
+  width: 100%;
+}
+.focus {
+  display: block;
+  width: 15rem;
+  height: 7.36rem;
+}
+.focus img {
+  width: 100%;
+}
+.ad {
+  display: flex;
+  width: 15rem;
+}
+.ad a {
+  flex: 1;
+}
+.ad a img {
+  width: 100%;
+}
+nav {
+  width: 15rem;
+  height: 6.2rem;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  float: left;
+}
+nav ul li a {
+  display: block;
+  width: 3rem;
+  height: 2.84rem;
+  text-align: center;
+}
+nav ul li a img {
+  width: 1.68rem;
+}
+nav ul li a span {
+  font-size: 0.4rem;
+  color: #696868;
+}
+.newimg {
+  display: flex;
+  width: 15rem;
+  height: 4.68rem;
+}
+.newimg a {
+  border-left: 0.02rem solid #fff;
+}
+.newimg a img {
+  height: 4.68rem;
+}
+.newimg a:nth-child(1) {
+  border: 0;
+}
+.yh {
+  width: 14.04rem;
+  height: 13.6rem;
+  background-color: #fff;
+  margin: 0.8rem auto;
+  border-radius: 0.2rem;
+}
+.yh ul {
+  height: 10.4rem;
+}
+.yh ul li {
+  float: left;
+}
+.yh ul li a {
+  display: block;
+  width: 7rem;
+  height: 5.16rem;
+}
+.yh ul li a span {
+  font-size: 0.5rem;
+  font-weight: 700;
+  color: #000;
+  padding-left: 0.4rem;
+}
+.yh ul li a > p {
+  font-size: 0.4rem;
+  color: #969393;
+  margin-top: 0.1rem;
+  padding-left: 0.4rem;
+}
+.yh ul li a .goods {
+  width: 7rem;
+  height: 2.98rem;
+  margin-top: 0.2rem;
+}
+.yh ul li a .goods .left,
+.yh ul li a .goods .right {
+  float: left;
+  width: 2.4rem;
+  height: 2.98rem;
+}
+.yh ul li a .goods .left img,
+.yh ul li a .goods .right img {
+  width: 2.4rem;
+}
+.yh ul li a .goods .left p,
+.yh ul li a .goods .right p {
+  font-size: 0.36rem;
+  text-align: center;
+  color: red;
+}
+.yh ul li a .goods .left {
+  margin: 0 0.6rem;
+}
+.yh ul li .juhui .goods .left,
+.yh ul li .pingou .goods .left,
+.yh ul li .juhui .goods .right,
+.yh ul li .pingou .goods .right {
+  position: relative;
+}
+.yh ul li .juhui .goods .left p,
+.yh ul li .pingou .goods .left p,
+.yh ul li .juhui .goods .right p,
+.yh ul li .pingou .goods .right p {
+  position: absolute;
+  top: 1.98rem;
+  left: -0.26rem;
+  color: #000;
+  width: 3rem;
+  height: 1.08rem;
+  padding-top: 0.6rem;
+  background: url(../upload/juhui-p.png) no-repeat;
+  background-size: 3rem;
+}
+.yh ul li:nth-child(2n) {
+  border-left: 0.04rem solid #f2f2f2;
+}
+.yh .recommend {
+  width: 14.04rem;
+  height: 3.44rem;
+  border-top: 0.04rem solid #f2f2f2;
+}
+.yh .recommend .title {
+  float: left;
+  width: 3.46rem;
+  height: 3.44rem;
+}
+.yh .recommend .title a {
+  display: block;
+  margin: 0.3rem 0 0 0.4rem;
+}
+.yh .recommend .title a span {
+  font-size: 0.5rem;
+  font-weight: 700;
+  color: #000;
+  padding: 0.02rem 0 0 0.02rem;
+}
+.yh .recommend .title a p {
+  font-size: 0.4rem;
+  color: #969393;
+  margin-top: 0.06rem;
+}
+.yh .recommend .things {
+  float: left;
+  width: 2.4rem;
+  height: 3.44rem;
+  margin-right: 0.2rem;
+}
+.yh .recommend .things a img {
+  width: 2rem;
+  margin: 0.3rem 0 0 0.2rem;
+}
+.yh .recommend .things a p {
+  color: #000;
+  font-size: 0.36rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.like {
+  width: 14.04rem;
+  height: 16rem;
+}
+.like .title {
+  width: 14.04rem;
+  height: 1.2rem;
+}
+.like .title img {
+  width: 14.04rem;
+}
+.like .things li {
+  float: left;
+}
+.like .things li a {
+  display: block;
+  width: 6.84rem;
+  height: 10.84rem;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 0.2rem;
+}
+.like .things li a img {
+  width: 6.84rem;
+}
+.like .things li .description {
+  position: relative;
+  width: 6.36rem;
+  margin: 0 auto;
+}
+.like .things li .description p {
+  width: 6.36rem;
+  font-size: 0.46rem;
+  font-weight: 700;
+  color: #000;
+  overflow: hidden;
+  line-height: 0.56rem;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.like .things li .description img {
+  width: 0.96rem;
+  height: 0.48rem;
+}
+.like .things li .description > span {
+  display: block;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.38rem;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  text-align: center;
+  border: 0.02rem solid #c29e6f;
+  border-radius: 0.1rem;
+  font-size: 0.28rem;
+  background-color: #f8eae2;
+  color: #000;
+}
+.like .things li .description .span2 {
+  left: 3.2rem;
+}
+.like .things li .description .price .span3 {
+  font-size: 0.5rem;
+  font-weight: 700;
+  color: red;
+}
+.like .things li .description .price .span4 {
+  font-size: 0.32rem;
+  color: #969393;
+}
+.like .things li:nth-child(2n) {
+  float: right;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15rem;
+  height: 2.02rem;
+  background-color: #fff;
+  z-index: 5;
+}
+footer ul li {
+  float: left;
+}
+footer ul li a {
+  display: block;
+  width: 3rem;
+  height: 2rem;
+  text-align: center;
+  padding-top: 0.3rem;
+}
+footer ul li a img {
+  width: 0.96rem;
+}
+footer ul li a span {
+  display: block;
+  font-size: 0.4rem;
+  color: #4d4b4b;
+}
+footer ul li:nth-child(1) a span {
+  font-weight: 700;
+  color: #000;
+}
